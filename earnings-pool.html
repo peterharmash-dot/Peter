@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earnings Pool — Billtech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--
+    Эта страница — копия макета "Earnings pool" из Figma, свёрстанная на Tailwind.
+    Структура страницы (запомни этот порядок, он типичен почти везде):
+      1) <header> — верхняя навигация (логотип, меню, профиль)
+      2) <main>   — основной контент:
+            - hero  (большой заголовок + подзаголовок)
+            - stats (4 показателя prize pool)
+            - cards (3 карточки внизу)
+    Цвет фона взят прямо из Figma: rgb(248,248,251) -> #F8F8FB
+  -->
+</head>
+
+<body class="bg-[#F8F8FB] text-slate-800 min-h-screen">
+
+  <!-- ============ 1. ВЕРХНЯЯ НАВИГАЦИЯ ============ -->
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+      <!-- Логотип -->
+      <div class="flex items-center gap-2">
+        <span class="w-6 h-6 rounded-full bg-blue-600 inline-block"></span>
+        <span class="font-semibold text-slate-900">Pepsi</span>
+      </div>
+
+      <!-- Меню по центру. Активный пункт "Deposits" подсвечен синим. -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm text-slate-600">
+        <a href="#" class="hover:text-slate-900">Home</a>
+        <a href="#" class="hover:text-slate-900">Transfers</a>
+        <a href="#" class="hover:text-slate-900">Payments</a>
+        <a href="#" class="hover:text-slate-900">Wallet</a>
+        <a href="#" class="hover:text-slate-900">Services</a>
+        <a href="#" class="hover:text-slate-900">Reports</a>
+        <a href="#" class="text-blue-600 font-medium flex items-center gap-1">
+          Deposits
+          <span class="text-xs">▾</span>
+        </a>
+        <a href="#" class="hover:text-slate-900">Loans</a>
+      </nav>
+
+      <!-- Профиль справа -->
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:block text-right leading-tight">
+          <p class="text-sm font-medium text-slate-900">Sloan Rodríguez</p>
+          <p class="text-xs text-slate-400">sloanrodriguez@mail.com</p>
+        </div>
+        <span class="w-9 h-9 rounded-full bg-slate-300 inline-block"></span>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============ 2. ОСНОВНОЙ КОНТЕНТ ============ -->
+  <main class="max-w-7xl mx-auto px-6 py-8">
+
+    <!-- ---- HERO: заголовок + подзаголовок ---- -->
+    <section class="relative">
+      <h1 class="text-3xl font-bold text-slate-900">Earnings pool</h1>
+      <p class="mt-2 text-slate-500">
+        Invest your idle funds and earn passive income paid out every 24 hours.
+      </p>
+
+      <!-- ---- STATS: 4 показателя prize pool ---- -->
+      <!--
+        grid grid-cols-2 md:grid-cols-4 — на телефоне 2 колонки, на десктопе 4.
+        Это и есть "адаптивность": md: означает "от среднего экрана и шире".
+      -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 border-t border-slate-200 pt-6">
+
+        <div>
+          <p class="text-xs text-slate-400">Total Prize Pool (in USD)</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">$3,564,000</p>
+        </div>
+
+        <div>
+          <p class="text-xs text-slate-400 flex items-center gap-1">🇺🇸 USD Prize Pool</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">$1,890,000</p>
+        </div>
+
+        <div>
+          <p class="text-xs text-slate-400 flex items-center gap-1">🇪🇺 EUR Prize Pool</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">€1,250,000</p>
+        </div>
+
+        <div>
+          <p class="text-xs text-slate-400 flex items-center gap-1">🇬🇧 GBP Prize Pool</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">£424,000</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- CARDS: три карточки ---- -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+
+      <!-- Карточка 1: My Deposit -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col">
+        <h2 class="font-semibold text-slate-900">My Deposit</h2>
+
+        <!-- Контент по центру карточки -->
+        <div class="flex-1 flex flex-col items-center text-center py-8">
+          <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 text-2xl">
+            ▥
+          </div>
+          <p class="mt-4 font-medium text-slate-700">No Active Deposits</p>
+          <p class="mt-2 text-sm text-slate-400 max-w-xs">
+            Earn daily passive income. Payouts occur every 24 hours,
+            deposit anytime, withdraw anytime.
+          </p>
+          <button class="mt-5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-5 py-2 rounded-full transition">
+            Deposit and Earn
+          </button>
+        </div>
+      </div>
+
+      <!-- Карточка 2: Expected Payouts -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col">
+        <h2 class="font-semibold text-slate-900">Expected Payouts</h2>
+
+        <div class="flex-1 flex flex-col items-center text-center py-8">
+          <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 text-2xl">
+            ▤
+          </div>
+          <p class="mt-4 font-medium text-slate-700">No Payouts Yet</p>
+          <p class="mt-2 text-sm text-slate-400 max-w-xs">
+            View expected payments after depositing, based on your
+            amount and daily yield.
+          </p>
+          <button class="mt-5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-5 py-2 rounded-full transition">
+            Make Your First Deposit
+          </button>
+        </div>
+      </div>
+
+      <!-- Карточка 3: Profit Calculator (с рабочим ползунком) -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-6">
+        <h2 class="font-semibold text-slate-900">Profit Calculator</h2>
+
+        <!-- Поле "Invested Amount" -->
+        <label class="block mt-5 text-xs text-slate-400">Invested Amount</label>
+        <div class="mt-2 flex items-center justify-between border border-slate-200 rounded-lg px-3 py-2">
+          <span id="amountLabel" class="font-semibold text-slate-900">$3,000</span>
+          <span class="text-sm text-slate-500">🇺🇸 USD ▾</span>
+        </div>
+
+        <!--
+          input type="range" — это и есть ползунок.
+          oninput="..." запускает JS-функцию каждый раз, когда двигаешь ползунок.
+        -->
+        <input id="slider" type="range" min="1000" max="100000" step="100" value="3000"
+               oninput="updateProfit(this.value)"
+               class="w-full mt-3 accent-blue-600">
+        <div class="flex justify-between text-xs text-slate-400">
+          <span>$1,000</span>
+          <span>$100,000</span>
+        </div>
+
+        <!-- Estimated Profit -->
+        <p class="mt-5 text-xs text-slate-400">Estimated Profit</p>
+        <div class="mt-2 grid grid-cols-2 gap-3 text-sm">
+          <div class="bg-slate-50 rounded-lg p-3">
+            <p class="text-slate-400 text-xs">Daily</p>
+            <p id="daily" class="font-semibold text-slate-900">$116.60</p>
+          </div>
+          <div class="bg-slate-50 rounded-lg p-3">
+            <p class="text-slate-400 text-xs">Monthly</p>
+            <p id="monthly" class="font-semibold text-slate-900">$3,611.91</p>
+          </div>
+          <div class="bg-slate-50 rounded-lg p-3">
+            <p class="text-slate-400 text-xs">Yearly</p>
+            <p id="yearly" class="font-semibold text-slate-900">$65,203.76</p>
+          </div>
+          <div class="bg-slate-50 rounded-lg p-3">
+            <p class="text-slate-400 text-xs">APY</p>
+            <p class="font-semibold text-slate-900">123.03%</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!--
+    Немного JavaScript, чтобы калькулятор реально считал.
+    Не пугайся — для HTML/CSS это пока не обязательно, но так нагляднее,
+    что ползунок "живой". Логика простая: берём сумму и считаем профит
+    при дневной ставке ~3.886% (подобрано под цифры из макета).
+  -->
+  <script>
+    const DAILY_RATE = 0.038867; // ~3.8867% в день, чтобы $3,000 давало ~$116.60
+
+    function money(n) {
+      return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function updateProfit(amount) {
+      amount = Number(amount);
+      const daily = amount * DAILY_RATE;
+      document.getElementById('amountLabel').textContent =
+        '$' + amount.toLocaleString('en-US');
+      document.getElementById('daily').textContent   = money(daily);
+      document.getElementById('monthly').textContent = money(daily * 31);
+      document.getElementById('yearly').textContent  = money(daily * 365);
+    }
+  </script>
+
+</body>
+</html>
