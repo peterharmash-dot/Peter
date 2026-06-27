@@ -1,34 +1,16 @@
-# 👋 Привет, я Peter
+# Hey, I'm Peter
 
-Дизайн-инженер, который любит превращать идеи в работающие интерфейсы.
+I'm a design engineer — which mostly means I get restless if I only design or only code, so I do both.
 
-## 🧑‍💻 Обо мне
+Most of my time goes into building interfaces: poking at a rough idea, throwing together a prototype, then slowly grinding it into something that actually works and doesn't feel clunky. I care a lot about the small stuff — spacing, the way a button reacts, whether a flow feels obvious or annoying. Probably too much sometimes.
 
-- 🎨 Работаю на стыке **дизайна и кода** — Design Engineer
-- 🌱 Сейчас углубляюсь в фронтенд и инструменты для прототипирования
-- ⚡ Верю, что хороший продукт = удобство + аккуратные детали
-- ☕ Топливо для работы — кофе и хорошая музыка
+Lately I've been spending more time on the frontend side and messing around with prototyping tools (and, honestly, a lot of AI tooling — it's hard not to right now).
 
-## 🛠️ Чем увлекаюсь
+A few things about me:
 
-- UI/UX и дизайн-системы
-- Веб-разработка (HTML, CSS, JavaScript)
-- Автоматизация рутины и работа с Git
-- Эксперименты с новыми инструментами и ИИ
+- I work in plain web stuff — HTML, CSS, JavaScript — nothing exotic
+- I have a soft spot for clean design systems
+- I run on coffee and whatever's playing in my headphones
+- This year I really want to ship a side project instead of just starting ten of them
 
-## 📊 Немного фактов обо мне
-
-| | |
-|---|---|
-| 🌍 Часовой пояс | Работаю по своему ритму |
-| 💬 Языки | Русский, English |
-| 🎯 Цель на год | Запустить свой пет-проект |
-| 🐙 GitHub | [@peterharmash-dot](https://github.com/peterharmash-dot) |
-
-## 📫 Связаться со мной
-
-- ✉️ Email: peterharmash@gmail.com
-
----
-
-> *«Дизайн — это не то, как это выглядит, а то, как это работает.»*
+If you want to reach me, email's the easiest: **peterharmash@gmail.com**. I'm also around on GitHub as [@peterharmash-dot](https://github.com/peterharmash-dot).
